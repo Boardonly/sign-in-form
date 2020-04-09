@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
+body {
+	font: 600 16px/1.2 Quicksand, sans-serif;
+	letter-spacing: 0.06em;
+  color: #fbf6e4;
+  background: #e5eeee;
+}
+
+/* Layout */
+.ba-container {
+	padding: 50px 70px 5px;
+	max-width: 400px;
+	background-image: url(../img/background.png);
+	background: linear-gradient(to right top, #2d20a8, #c974d9);
+}
+.ba-maxwidth {
+  width: 100%;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+	transition: color 0.3s ease-in, border-color 0.3s ease-in,
+	background-color 0.3s ease-in, opacity 0.3s ease-in;
+	color: #fff;
+	text-decoration: none;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+	font-size: 17px;
+	display: inline-block;
+	background: #23ae92;
+	border: 2px solid #23ae92;
+	letter-spacing: 0.06em;
+	padding: 10px;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+	background: transparent;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	padding: 5px;
+	height: 42px;
+	font-weight: 400;
+	background: transparent;
+	border: 2px solid #a98ccb;
+	margin-bottom: 15px;
+	transition: color 0.3s ease-in, border-color 0.3s ease-in,
+	background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border: 2px solid #e66a64;
+}
+textarea {
+}
+.ba-signin-form {
+	background: #e5eeee;
+	padding: 50px 20px;
+}
+.ba-signin-form__header {
+	font-size: 18px;
+	margin-bottom: 50px;
+	margin-left: -18px;
+}
+.ba-signin-form__header > a {
+	color: #e1c2f1;
+	margin-left: 18px;
+}
+.ba-signin-form__header > a:hover {
+	border-bottom: 2px solid #e66a64;
+	color: #fbf6e4;
+	padding-bottom: 2px;
+}
+label {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 6px;
+}
+.ba-signin-form__footer {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 13px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  letter-spacing: 0.05em;
+}
+.ba-signin-form__footer > a {
+	color: #b9b9cc;
+	border-bottom: 1px solid rgba(185, 185, 204, 0.1);
+	padding-bottom: 2px;
+	opacity: 0.9;
+}
+.ba-signin-form__footer > a:hover {
+	border-bottom: 1px solid rgba(231, 231, 231, 0.6);
+	color: #fbf6e4;
+	padding-bottom: 2px;
+}
+[type="checkbox"] {
+	height: 0px;
+	width: 0px;
+}
+.ba-checkbox-wrap {
+	display: flex;
+	position: relative;
+	padding-top: 8px;
+	margin-bottom: 35px;
+	
+}
+.ba-signin-form__checktext {
+	margin-left: 25px;
+	font-size: 13px;
+	letter-spacing: 0.04em;
+}
+
+[id=signed-in] ~ label:before{
+	content: '';
+	position: absolute;
+	left: 0px;
+	height: 15px;
+	width: 15px;
+	background: #fff;
+	border: 2px solid #23ae92;
+	cursor: pointer;
+}
+
+[id=signed-in] ~ label::after{
+	content: '\2713';
+	display: inline-block;
+	position: absolute;
+	left: 2px;
+	color: #fff;
+}
+[id=signed-in]:checked ~ label:before{    
+	background: #23ae92;
+}
+.ba-shadow{
+	box-shadow: 0 100px 50px rgba(0, 0, 0, 0.4) ;
+}
